@@ -1,5 +1,7 @@
 package com.twu.introductory_programming_exercises.diamond_exercises;
 
+import com.utils.Print;
+
 /**
  * Created by rsma on 09/09/2017.
  */
@@ -8,7 +10,7 @@ public class IsoscelesTriangle {
 
     public void printIsoscelesTriangle(int n) {
         String str = buildStr(n);
-        print(str);
+        Print.print(str);
     }
 
     private String buildStr(int n) {
@@ -24,9 +26,5 @@ public class IsoscelesTriangle {
             sb.append("\n");
         }
         return sb.toString();
-    }
-
-    private void print(String str) {
-        System.out.print(str);
     }
 }

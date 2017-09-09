@@ -1,5 +1,7 @@
 package com.twu.introductory_programming_exercises.triangle_exercises.practice_3;
 
+import com.utils.Print;
+
 /**
  * Created by rsma on 09/09/2017.
  */
@@ -7,7 +9,7 @@ public class DrawVerticalLine {
 
     public void printAsteriskLine(int n) {
         String str = buildStr(n);
-        print(str);
+        Print.print(str);
     }
 
     private String buildStr(int n) {
@@ -16,9 +18,5 @@ public class DrawVerticalLine {
             sb.append("*\n");
         }
         return sb.toString();
-    }
-
-    private void print(String str) {
-        System.out.print(str);
     }
 }
