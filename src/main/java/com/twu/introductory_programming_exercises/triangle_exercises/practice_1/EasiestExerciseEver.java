@@ -7,6 +7,10 @@ public class EasiestExerciseEver {
 
 
     public void printSomething(String s) {
+        print(s);
+    }
+
+    private void print(String s) {
         System.out.print(s);
     }
 }
