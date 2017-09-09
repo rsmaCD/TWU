@@ -5,9 +5,11 @@ import com.utils.Print;
 /**
  * Created by rsma on 09/09/2017.
  */
-public class Diamond {
+public class DiamondWithName {
 
-    public void printDiamond(int n) {
+    private static final String NAME = "Bill";
+
+    public void printDiamondWithName(int n) {
         String str = buildStr(n);
         Print.print(str);
     }
@@ -16,7 +18,7 @@ public class Diamond {
         StringBuffer sb = new StringBuffer();
         int totalRowNum = n * 2 - 1;
         for (int i = 0; i < totalRowNum; i++) {
-            if (i <= (totalRowNum - 1) / 2) {
+            if (i < (totalRowNum - 1) / 2) {
                 for (int j = i; j < (totalRowNum - 1) / 2; j++) {
                     sb.append(" ");
                 }
@@ -26,6 +28,8 @@ public class Diamond {
                 for (int j = i; j < (totalRowNum - 1) / 2; j++) {
                     sb.append(" ");
                 }
+            } else if(i == (totalRowNum - 1) / 2){
+                sb.append(NAME);
             } else {
                 for (int j = 0; j < i - (totalRowNum - 1) / 2; j++) {
                     sb.append(" ");
@@ -39,6 +43,7 @@ public class Diamond {
             }
             sb.append("\n");
         }
+
         return sb.toString();
     }
 }
