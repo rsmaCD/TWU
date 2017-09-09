@@ -1,4 +1,4 @@
-package com.twu.introductory_programming_exercises.diamond_exercises;
+package com.twu.introductory_programming_exercises.diamond_exercises.practice_3;
 
 import com.utils.Print;
 
